@@ -1,0 +1,97 @@
+503  wget http://rpmfind.net/linux/centos/7.8.2003/os/x86_64/Packages/telnet-0.17-64.el7.x86_64.rpm
+  504  ls
+  505  rpm -ivh telnet-0.17-64.el7.x86_64.rpm 
+  506  rpm -qa | grep telnet
+  507  man telnet
+  508  cd /usr/share/doc/
+  509  ls
+  510  l
+  511  cd ~
+  512  #rpm -ivh telnet-0.17-64.el7.x86_64.rpm 
+  513  rpm -qa | grep telnet
+  514  rpm -e telnet-0.17-64.el7.x86_64
+  515  rpm -qa | grep telnet
+  516  man telnet
+  517  rpm -ivh telnet-0.17-64.el7.x86_64
+  518  rpm -ivh telnet-0.17-64.el7.x86_64.rpm 
+  519  man telnet
+  520  #rpm -U telnet-0.17-64.el7.x86_64.rpm 
+  521  rpm -qa | grep telnet
+  522  rpm -qa | wc -l
+  523  which telnet
+  524  rpm -qf /usr/bin/telnet
+  525  which ls
+  526  rpm -qf /usr/bin/ls
+  527  which fdisk
+  528  rpm -qf /usr/sbin/fdisk
+  529  rpm -ql quota
+  530  rpm -ql  telnet
+  531  rpm -Va
+  532  rpm -Vf /etc/ssh/sshd_config 
+  533  which ssh
+  534  rpm -Vf /usr/bin/ssh
+  535  rpm -lf /usr/bin/ssh
+  536  rpm -Vf /etc/ssh/sshd_config 
+  537  vi /etc/ssh/sshd_config 
+  538  systemctl restart sshd
+  539  rpm -Vf /etc/ssh/sshd_config
+  540  vi /etc/ssh/sshd_config 
+  541  systemctl restart sshd
+  542  rpm -Vf /etc/ssh/sshd_config
+  543  ls
+  544  pwd
+  545  cp telnet-0.17-64.el7.x86_64.rpm /tmp/
+  546  cd /tmp/
+  547  ls
+  548  ip a
+  549  ls
+  550  sdiff sshd_config /etc/ssh/sshd_config 
+  551  ls
+  552  cd ~
+  553  ls
+  554  ip a
+  555  ls
+  556  du -sh CentOS-7-x86_64-DVD.iso 
+  557  du -sh te
+  558  du -sh telnet-0.17-64.el7.x86_64.rpm 
+  559  yum install  http
+  560  yum install  httpd
+  561  mount -o loop  CentOS-7-x86_64-DVD.iso /var/www/html/
+  562  df -h
+  563  cd /var/www/html
+  564  ls
+  565  cd Packages/
+  566  ls
+  567  ls -l |wc -l
+  568  systemctl start httpd
+  569  systemctl status firewalld
+  570  systemctl stop firewalld
+  571  systemctl disable firewalld
+  572  #systemctl start httpd
+  573  pwd
+  574  ip a
+  575  pwd
+  576  cd /var/www/html/
+  577  ls
+  578  cat > index.html
+  579  cd www
+  580  cd ..
+  581  df -h
+  582  umount /var/www/html/
+  583  df -h
+  584  cd html/
+  585  vi index.html
+  586  mount -o loop  CentOS-7-x86_64-DVD.iso /var/www/html/
+  587  cd ~
+  588  mount -o loop  CentOS-7-x86_64-DVD.iso /var/www/html/
+  589  df -h
+  590  cd /var/www/html/
+  591  ls
+  592  cat /etc/yum.repos.d/CentOS-
+  593  cat /etc/yum.repos.d/CentOS-Base.repo 
+  594  df -h
+  595  cd ~
+  596  ls
+  597  yum install telnet-0.17-64.el7.x86_64.rpm 
+  598  cat sta/
+  599  ls
