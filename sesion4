@@ -1,0 +1,150 @@
+658  sleep 200
+  659  kill -9 4672
+  660  ps -ef
+  661  top
+  662  #kill -9 1009
+  663  top - root
+  664  top -u root
+  665  top -u sai
+  666  useradd sai
+  667  passwd sai
+  668  top -u sai
+  669  top -d 5
+  670  top  -p 1009
+  671  ps
+  672  ps -ef
+  673  ps -efH
+  674  ps -aux
+  675  ps -auL
+  676  ps -aL
+  677  ps -efL
+  678  ps -aux
+  679  #ps -aux
+  680  ps -ef
+  681  ps -aux
+  682  ps -e
+  683  ps -elF
+  684  ps -eo pid,command
+  685  yum provides pstree
+  686  pstree
+  687  ip a
+  688  pstree
+  689  jobs 
+  690  bg %1
+  691  jobs 
+  692  ps  aux
+  693  ps  -ef
+  694  top
+  695  nice -n 10 sleep 500&
+  696  ps -eo pid,command,NI
+  697  ps -eo pid,command,nice
+  698  renice -15 7651
+  699  ps -eo pid,command,nice
+  700  uptime 
+  701  top
+  702  uptime 
+  703  nproc 
+  704  df 
+  705  df -h
+  706  ls
+  707  du telnet-0.17-64.el7.x86_64.rpm
+  708  du -h telnet-0.17-64.el7.x86_64.rpm
+  709  df -h
+  710  cd /
+  711  du -sh | grep G
+  712  du -sh * | grep G
+  713  cd usr/
+  714  du -sh * | grep G
+  715  ls
+  716  free
+  717  free -h
+  718  free -b
+  719  vmstat 
+  720  man vmstat
+  721  cd /dev/
+  722  ls -l | grep ^b
+  723  vmstat 
+  724  man vmstat
+  725  #df -h
+  726  vmstat -s -n
+  727  sleep 300
+  728  sleep 300 &
+  729  jobs
+  730  ps
+  731  fg %1
+  732  cd /
+  733  pwd
+  734  l
+  735  du -sh
+  736  du -sh *
+  737  pwd
+  738  ls
+  739  kill -9 7156
+  740  htop
+  741  man du
+  742  du -sh
+  743  df -sh
+  744  df -h
+  745  sleep 300$
+  746  sleep 300&
+  747  jobs
+  748  ps
+  749  kill -9 9949
+  750  ps
+  751  sleep 200
+  752  ps
+  753  jobs
+  754  ps -eo pid,command,status
+  755  ps -aux
+  756  jobs
+  757  bg %1
+  758  ps -aux
+  759  ls
+  760  pstree
+  761  cat /etc/redhat-release 
+  762  systemctl status httpd
+  763  cd /var/www/html/
+  764  ls
+  765  cat index.html 
+  766  systemctl stop httpd
+  767  systemctl status httpd
+  768  systemctl start httpd
+  769  #systemctl start httpd
+  770  #systemctl status httpd
+  771  #systemctl restart httpd
+  772  vi /etc/httpd/conf/httpd.conf 
+  773  systemctl restart httpd
+  774  systemctl status httpd
+  775  #systemctl stop httpd
+  776  #systemctl start httpd
+  777  #systemctl status httpd
+  778  #systemctl restart httpd
+  779  service httpd status
+  780  systemctl status sshd
+  781  systemctl stop sshd
+  782  systemctl status sshd
+  783  systemctl start sshd
+  784  history 
+  785  #systemctl reload sshd
+  786  systemctl status sshd
+  787  systemctl restart sshd
+  788  systemctl status sshd
+  789  systemctl reload sshd
+  790  systemctl status sshd
+  791  systemctl is-active sshd
+  792  service -status-all
+  793  systemctl lists-units --type service all
+  794  systemctl lists-units --type service -all
+  795  systemctl list-units --type service -all
+  796  #systemctl list-units --type service -all
+  797  systemctl status sshd
+  798  systemctl enable httpd
+  799  systemctl disable httpd
+  800  systemctl status sshd
+  801  systemctl disable httpd
+  802  systemctl status httpd
+  803  init 6
+  804  systemctl status httpd
+  805  systemctl enabled httpd
+  806  systemctl enable httpd
+  807  history 
