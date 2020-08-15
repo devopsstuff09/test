@@ -1,0 +1,105 @@
+957  cat /proc/meminfo 
+  958  cat /proc/partitions 
+  959  cat /proc/version 
+  960  nproc 
+  961  cat /proc/cpuinfo 
+  962  cat /proc/devices 
+  963  cat /etc/hostname 
+  964  hostname
+  965  cat /proc/sys/kernel/hostname 
+  966  cd ~
+  967  cat /etc/redhat-release 
+  968  ps -aux
+  969  ps -aux | wc -l
+  970  sysctl -a
+  971  sysctl -a | grep -i pid
+  972  cat /etc/sysctl.conf 
+  973  vi /etc/sysctl.conf 
+  974  sysctl -a | grep -i pid
+  975  sysctl -p
+  976  sysctl -a | grep -i pid
+  977  sysctl -a 
+  978  cat /etc/sysctl.conf 
+  979  lspci
+  980  yum provides lspci
+  981  yum install pciutils
+  982  lspci
+  983  ip a
+  984  #lspci
+  985  man ls
+  986  cd /usr/share/doc/
+  987  ls
+  988  pwd
+  989  man ssh
+  990  ls -l | grep ssh
+  991  pwd
+  992  cd ~
+  993  cat /etc/passwd
+  994  awk -F":" '{print $1}' /etc/passwd
+  995  awk -F":" '{print $2}' /etc/passwd
+  996  awk -F":" '{print $3}' /etc/passwd
+  997  awk -F":" '{print $1","$3}' /etc/passwd
+  998  #awk -F":" '{print $1","$3}' /etc/passwd
+  999  awk -F":" '/user/{print}' /etc/passwd
+ 1000  awk -F":" '/sai/{print}' /etc/passwd
+ 1001  awk -F":" '/sai/{print $3}' /etc/passwd
+ 1002  awk -F":" '{if ($1~/sai/) print} /etc/passwd
+ 1003  awk -F":" '{if ($1~/sai/) print}' /etc/passwd
+ 1004  cat /var/log/messages
+ 1005  grep  SAI /etc/passwd
+ 1006  grep -i  SAI /etc/passwd
+ 1007  grep -n  SAI /etc/passwd
+ 1008  grep -in  SAI /etc/passwd
+ 1009  grep -iv  SAI /etc/passwd
+ 1010  grep sshd /etc/passwd
+ 1011  grep -A 2 sshd /etc/passwd
+ 1012  grep sai /etc/passwd
+ 1013  man grep 
+ 1014  man ls
+ 1015  man ls | grep [0-9]
+ 1016  man ls | grep [a-z]
+ 1017  rpm -qa
+ 1018  rpm -qa | grep ssh
+ 1019  cd /dev/
+ 1020  ls -l 
+ 1021  ls -l  | grep sda
+ 1022  ls -l  
+ 1023  ls -l  | wc
+ 1024  ls -l  | wc -l
+ 1025  ls -l  | wc -w
+ 1026  ls -l  | wc -c
+ 1027  ls -l  | wc -l
+ 1028  ls -l
+ 1029  ls -l  | wc -l
+ 1030  cd ~
+ 1031  cp /etc/passwd /tmp/pava
+ 1032  cd /tmp/
+ 1033  ls
+ 1034  cat pava 
+ 1035  sed s/sai/ashish/ pava 
+ 1036  sed s/sai/ashish/g pava 
+ 1037  #sed s/sai/ashish/ pava 
+ 1038  #sed s/sai/ashish/g pava 
+ 1039  cat pava 
+ 1040  sed s/sai/ashish/g pava 
+ 1041  sed s/sai/ashish/g pava  > pavamodietxt
+ 1042  cat pavamodietxt 
+ 1043  sed -n '5p' pava
+ 1044  cat pava
+ 1045  sed -n '5,10p' pava
+ 1046  vi pava
+ 1047  cat pava
+ 1048  sed -e '/^$/d' pava
+ 1049  #sed s/sai/ashish/g pava  > pavamodietxt
+ 1050  cd /dev/
+ 1051  ls
+ 1052  ls -l | grep sda
+ 1053  grep sai /etc/passwd
+ 1054  grep -A 2 sai /etc/passwd
+ 1055  cd /proc/
+ 1056  ls
+ 1057  cd 1
+ 1058  ls
+ 1059  cat limits 
+ 1060  pwd
+ 1061  history 
