@@ -1,0 +1,203 @@
+tar -cvf pavan.tar /etc
+  847  ls
+  848  scp pavan.tar root@192.168.57.4:/tmp/
+  849  scp pavan.tar root@192.168.57.3:/tmp/
+  850  l
+  851  #tar -cvf pavan.tar /etc
+  852  du -sh /etc/
+  853  du -sh pavan.tar 
+  854  tar -czvf pavan.tar.gz pavan.tar 
+  855  ls
+  856  du -sh pavan.tar
+  857  du -sh pavan.tar.gz 
+  858  scp pavan.tar.gz root@192.168.57.3:/root
+  859  #du -sh /data
+  860  man tar
+  861  #tar -czvf pavan.tar.gz pavan.tar 
+  862  #tar -cvf pavan.tar /etc
+  863  tar -czvf rahul.tar.gz /etc/
+  864  ls
+  865  du -sh rahul.tar.gz
+  866  #tar -czvf rahul.tar.gz /etc/
+  867  cp rahul.tar.gz /tmp/
+  868  cd /tmp/
+  869  ls
+  870  tar -xzvf rahul.tar.gz 
+  871  ls
+  872  #tar -czvf rahul.tar.gz /etc/
+  873  #tar -xzvf rahul.tar.gz 
+  874  pwd
+  875  man gzip
+  876  man bzip2
+  877  yum provide bzip2
+  878  yum provides bzip2
+  879  yum install bzip2
+  880  man bzip2
+  881  #tar -czvf rahul.tar.gz /etc/
+  882  #tar -xzvf rahul.tar.gz 
+  883  tar -cjvf ashsih.tar.bz2 /etc/
+  884  ls
+  885  du -sh ashsih.tar.bz2
+  886  du -sh rahul.tar.gz 
+  887  #tar -xzvf rahul.tar.gz 
+  888  #tar -xjvf ashsih.tar.bz2 
+  889  mkdir ashish
+  890  mv ashsih.tar.bz2 ashish/
+  891  cd ashish/
+  892  ls
+  893  tar -xjf ashsih.tar.bz2 
+  894  ls
+  895  man ls
+  896  ls
+  897  cd etc/
+  898  ls
+  899  cd httpd/
+  900  ls
+  901  pwd
+  902  ls
+  903  df -Th
+  904  #scp pavan.tar.gz root@192.168.57.3:/root
+  905  cd ~
+  906  ls
+  907  vi sample.txt
+  908  cd sama
+  909  cd sample
+  910  ls
+  911  cat index.html 
+  912  cd ..
+  913  rsync -azvh sample/ root@192.168.57.3:/tmp/
+  914  rsync -azvh sample/ root@192.168.57.3:/tmp/pavan/
+  915  cd sample
+  916  lks
+  917  ls
+  918  cat > f1
+  919  cat > f2
+  920  cat > f3
+  921  cd ..
+  922  cd sample
+  923  ls
+  924  rsync -azvh sample/ root@192.168.57.3:/tmp/pavan/
+  925  cd ..
+  926  rsync -azvh sample/ root@192.168.57.3:/tmp/pavan/
+  927  cd sample
+  928  ls
+  929  rm -rf f3 
+  930  cd ..
+  931  rsync -azvh sample/ root@192.168.57.3:/tmp/pavan/
+  932  ls
+  933  cd sample
+  934  ls
+  935  ssh root@192.168.57.3
+  936  cd /var/log/
+  937  ls
+  938  cd tomcat/
+  939  ls
+  940  tail localhost.2020-08-14.log 
+  941  cd ..
+  942  pwd
+  943  ls
+  944  cd httpd/
+  945  ls
+  946  tail access_log 
+  947  cd ..
+  948  l
+  949  ls
+  950  cd jenkins/
+  951  ls
+  952  tail jenkins.log
+  953  ls
+  954  cd ..
+  955  cat boot.log
+  956  hostname
+  957  cat /etc/rsyslog.conf 
+  958  ls
+  959  #ls
+  960  vi /etc/rsyslog.conf 
+  961  systemctl stauts rsyslog
+  962  systemctl status rsyslog
+  963  systemctl restart rsyslog
+  964  tail -f /var/log/secure
+  965  cat /etc/rsyslog.conf 
+  966  systemctl status firewalld
+  967  systemctl stop firewalld
+  968  #systemctl disabled firewalld
+  969  L
+  970  cd /etc/cron.daily/
+  971  ls
+  972  ls -l
+  973  cat logrotate 
+  974  cat /etc/logrotate.conf
+  975  ls -l
+  976  cd /var/log/
+  977  cd httpd/
+  978  ls
+  979  cd /etc/logrotate.d/
+  980  ls
+  981  cd yum 
+  982  cat yum 
+  983  vi yum 
+  984  yum log
+  985  yum history
+  986  cat /var/log/yum.log 
+  987   cat yum 
+  988  logrotate -f yum 
+  989  cat /etc/ntp.conf
+  990  yum install ntp
+  991  cat /etc/ntp.conf 
+  992  vi /etc/ntp.conf 
+  993  cat /etc/ntp.conf 
+  994  #vi /etc/ntp.conf 
+  995  systemctl status nntpd
+  996  systemctl status ntpd
+  997  systemctl start ntpd
+  998  systemctl statuis ntpd
+  999  systemctl status ntpd
+  
+  ++++
+  130  cd /root/
+  131  ls
+  132  #tar -xvf pavan.tar 
+  133  tar -xzvf pavan.tar.gz 
+  134  ls
+  135  tar -xvf pavan.tar 
+  136  ls
+  137  #tar -xzvf pavan.tar.gz 
+  138  cd /tmp/
+  139  ls
+  140  cd sample/
+  141  ls
+  142  cd ..
+  143  ls
+  144  rm -rf sample/
+  145  ls
+  146  mkdir pavan
+  147  cd pavan/
+  148  ls
+  149  cat index.html 
+  150  ls
+  151  cd ~
+  152  systemctl status rsyslogd
+  153  systemctl status rsyslog
+  154  cat /etc/rsyslog.conf 
+  155  tail /var/log/messages
+  156  date
+  157  tail -f /var/log/messages 
+  158  cat /etc/rsyslog.conf 
+  159  #cat /etc/rsyslog.conf 
+  160  tail -f /var/log/secure 
+  161  #tail -f /var/log/secure 
+  162  tail /var/log/secure 
+  163  cat /etc/rsyslog.conf 
+  164  tail /var/log/boot.log
+  165  cat /var/log/boot.log
+  166  tail -f /var/log/messages 
+  167  vi /etc/rsyslog.conf 
+  168  systemctl restart rsyslog
+  169  systemctl status rsyslog
+  170  systemctl status rsyslog -l
+  171  vi /etc/rsyslog.conf 
+  172  systemctl restart rsyslog
+  173  systemctl status rsyslog -l
+  174  hostnamectl set-hostname client.example.com
+  175  cat /etc/rsyslog.conf 
+  176  #systemctl restart rsyslog
