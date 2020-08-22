@@ -1,0 +1,113 @@
+ 1001  ssh root@192.168.57.5
+ 1002  cd .ssh/
+ 1003  ls
+ 1004  vi authorized_keys 
+ 1005  cat authorized_keys 
+ 1006  vi authorized_keys 
+ 1007  cat /etc/ssh/sshd_config | grep 3389 
+ 1008  systemctl restart sshd
+ 1009  vi authorized_keys 
+ 1010  cat authorized_keys 
+ 1011  vi authorized_keys 
+ 1012  vi /etc/ssh/sshd_config 
+ 1013  systemctl restart sshd
+ 1014  ls
+ 1015  cat authorized_keys 
+ 1016  cat /etc/passwd
+ 1017  passwd sai
+ 1018  vi /etc/ssh/sshd_config 
+ 1019  systemctl restart sshd
+ 1020  systemctl status sshd
+ 1021  pwd
+ 1022  ls
+ 1023  cd /home/sai/.ssh
+ 1024  vi /etc/ssh/sshd_config 
+ 1025  systemctl restart sshd
+ 1026  cd /home/sai/.ssh
+ 1027  ls
+ 1028  cat authorized_keys 
+ 1029  ls
+ 1030  ssh root@192.168.57.5
+ 1031  ls
+ 1032  cat authorized_keys 
+ 1033  vi /etc/ssh/sshd_config 
+ 1034  cd ~
+ 1035  cat /etc/crontab 
+ 1036  crontab -e
+ 1037  date
+ 1038  crontab -e
+ 1039  date
+ 1040  crontab -e
+ 1041  crontab -l
+ 1042  date
+ 1043  ls -l /tmp/cron.txt
+ 1044  date
+ 1045  ls -l /tmp/cron.txt
+ 1046  cat /tmp/cron.txt
+ 1047  crontab -e
+ 1048  crontab -l
+ 1049  date
+ 1050  cat /tmp/cron.txt 
+ 1051  date
+ 1052  cat /tmp/cron.txt 
+ 1053  cat /etc/crontab 
+ 1054  cd /etc/cron.daily/
+ 1055  ls
+ 1056  cat /etc/crontab 
+ 1057  date
+ 1058  cat /tmp/cron.txt 
+ 1059  df -h
+ 1060  cd ~
+ 1061  ls
+ 1062  su - sai
+ 1063  vi /etc/cron.deny 
+ 1064  cat /etc/cron.deny 
+ 1065  su - sai
+ 1066  crontab -l
+ 1067  crontab -l sai
+ 1068  crontab -u sai
+ 1069  crontab -lu sai
+ 1070  crontab -lu root
+ 1071  crontab -l
+ 1072  crontab -e
+ 1073  crontab -l
+ 1074  cat /tmp/cron.txt 
+ 1075  cat /tmp/cron.txt  | wc -l
+ 1076  date
+ 1077  cat /tmp/cron.txt  | wc -l
+ 1078  crontab -e
+ 1079  cd /etc/cron.daily/
+ 1080  ls
+ 1081  vi dail.sh
+ 1082  cd ../cron.hourly/
+ 1083  ls
+ 1084  systemctl status crond
+ 1085  tail /var/log/cron
+ 1086  tail -50 /var/log/cron
+ 1087  at now +2mins
+ 1088  yum provide at
+ 1089  yum provides at
+ 1090  yum install at
+ 1091  systemctl start at
+ 1092  man at
+ 1093  at now +2mins
+ 1094  at now +2min
+ 1095  systemctl start atd
+ 1096  systemctl status atd
+ 1097  atq
+ 1098  ls -l /tmp/at.txt
+ 1099  date
+ 1100  atq
+ 1101  date
+ 1102  ls -l /tmp/at.txt
+ 1103  man at
+ 1104  cd ~
+ 1105  useradd samuel
+ 1106  passwd samuel
+ 1107  id samuel
+ 1108  id sai
+ 1109  su - samuel
+ 1110  tail /etc/shadow
+ 1111  su - samuel
+ 1112  tail /etc/passwd
+ 1113  su - samuel
