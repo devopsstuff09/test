@@ -1,0 +1,186 @@
+321  useradd u1
+  322  useradd u2
+  323  useradd u3
+  324  passwd u1
+  325  passwd u2
+  326  passwd u3
+  327  groupadd project
+  328  vi /etc/group
+  329  cd /
+  330  mkdir /data
+  331  rm -rf /data
+  332  mkdir /data
+  333  ls -ld /data
+  334  chgrp project /data
+  335  ls -ld /data
+  336  chmod 750 /data
+  337  ls -ld /data
+  338  cd /data
+  339  touch file1.txt
+  340  cd ..
+  341  su u1
+  342  su u2
+  343  chmod 770 /data
+  344  ls -ld /data
+  345  su u2
+  346  cd /data
+  347  ls -l
+  348  ls -ld /data
+  349  su - u3
+  350  ls -ld /data
+  351  chgrp project file2.txt 
+  352  su - u3
+  353  chmod 2770 /data
+  354  su - u2
+  355  ls -ld /data
+  356  chmod 3770 /data
+  357  ls -ld /data
+  358  su - u3
+  359  chmod 2770 /data
+  360  su - u3
+  361  cd ~
+  362  touch edureka
+  363  getfacl edureka
+  364  setfacl -m u:u1:rw edureka 
+  365  getfacl edureka
+  366  #setfacl -m u:u1:rw edureka 
+  367  #getfacl edureka
+  368  man setfacl
+  369  setfacl -b edureka 
+  370  getfacl edureka
+  371  cd ~
+  372  ls -l
+  373  history 
+  
+  
+  ++++++
+
+id sai
+  895  cat /etc/passwd
+  896  useradd u1
+  897  passwd u1
+  898  passwd 
+  899  passwd u1
+  900  useradd u2
+  901  passwd u2
+  902  passwd u3
+  903  useradd u3
+  904  passwd u3
+  905  useradd u4
+  906  passwd
+  907  passwd u4
+  908  tail /etc/passwd
+  909  groupadd project -g 9000
+  910  tail /etc/group
+  911  useradd -G project u5
+  912  tail /etc/passwd
+  913  tail /etc/group
+  914  useradd -g project u6
+  915  tail /etc/group
+  916  vi /etc/group
+  917  #useradd -g project u6
+  918  su - u6
+  919  mkdir -p /tmp/data
+  920  useradd -d /tmp/data/ depali
+  921  su - depali
+  922  man useradd
+  923  useradd -n rinizin
+  924  cat /etc/passwd
+  925  cat /etc/group
+  926  cat /etc/passwd
+  927  usermod -u 2000 sai
+  928  cat /etc/passwd | grep sai
+  929  vi /etc/passwd
+  930  cat /etc/passwd
+  931  userdel rinizin
+  932  cat /etc/passwd
+  933  #userdel rinizin
+  934  cd /home/
+  935  ls
+  936  userdel -r sai
+  937  ls
+  938  #userdel -r sai
+  939  ¬
+  940  su - u1
+  941  visudo 
+  942  tail /etc/group
+  943  vi /etc/group
+  944  cat /etc/group
+  945  cp /etc/group /tmp/group_bkp
+  946  cat /tmp/group_bkp
+  947  vi /etc/ssh/sshd_config 
+  948  cp /etc/ssh/sshd_config  /tmp/ddh_bkp
+  949  vi /etc/ssh/sshd_config 
+  950  tail /etc/shadow
+  951  chage -l
+  952  chage -l u1
+  953  #passwd u1
+  954  chage -M 90 u1
+  955  chage -l u1
+  956  chage -W 3 u1
+  957  chage -l u1
+  958  chage -I 5 u1
+  959  chage -l u1
+  960  whoami
+  961  su - u1
+  962  w
+  963  top
+  964  w
+  965  group
+  966  groups 
+  967  id
+  968  id u1
+  969  last
+  970  cd ~
+  971  ls
+  972  ls -l sample
+  973  ls -l sample.txt 
+  974  ls -ld sample
+  975  ls
+  976  mkdir manoj
+  977  cd manoj/
+  978  mkdir test
+  979  touch sample.txt
+  980  ls -l
+  981  umask 
+  982  chmod 744 sample.txt 
+  983  ls -l
+  984  umask 0000
+  985  touch sample2.txt
+  986  ls -l
+  987  mkdir test2
+  988  ls -l
+  989  #umask 0000
+  990  vi /etc/bashrc 
+  991  su - u1
+  992  vi /etc/bashrc 
+  993  ls
+  994  ls -l
+  995  chmod 777 sample.txt 
+  996  ls -l
+  997  umask 
+  998  cd ~
+  999  touch edureka
+ 1000  ls -l edureka 
+ 1001  umask 
+ 1002  #vi /etc/bashrc 
+ 1003  cd manoj/
+ 1004  ls
+ 1005  ls -l
+ 1006  chmod u+x sample2.txt 
+ 1007  ls -l
+ 1008  chmod u-x sample2.txt 
+ 1009  ls -l sample2.txt 
+ 1010  chmod u=rwa sample2.txt 
+ 1011  chmod u=rwx sample2.txt 
+ 1012  ls -l sample2.txt 
+ 1013  chmod a=rwx sample2.txt 
+ 1014  chmod u=rwx sample2.txt 
+ 1015  chmod a=rwx sample2.txt 
+ 1016  ls -l sample2.txt 
+ 1017  chmod ag+x sample.txt 
+ 1018  ls -l sample.txt 
+ 1019  touch test3.txt
+ 1020  ls  -l test3.txt 
+ 1021  chmod ug+x test3.txt 
+ 1022  ls  -l test3.txt 
