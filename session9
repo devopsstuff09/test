@@ -1,0 +1,103 @@
+sestatus 
+  390  init 6
+  391  cd /var/www/html/
+  392  ls -lZ index.html 
+  393  systemctl status httpd
+  394  systemctl start httpd
+  395  pwd
+  396  ls -lZ
+  397  tocuh file1
+  398  ls -lZ
+  399  touch file1
+  400  ls -lZ
+  401  rm -rf index.html 
+  402  cd ~
+  403  vi index.html
+  404  ls -lZ index.html 
+  405  cp index.html /var/www/html/
+  406  cd -
+  407  ls -lZ index.html 
+  408  ls -ldZ /var/www/html/
+  409  rm -rf inn
+  410  rm -rf index.html 
+  411  cd -
+  412  mv index.html /var/www/html/
+  413  cd -
+  414  ls -lZ index.html 
+  415  pwd
+  416  chcon -t httpd_sys_content_t index.html 
+  417  ls -lZ index.html 
+  418  cat /etc/sysconfig/selinux 
+  419  sestatus 
+  420  ps -efZ | grep http
+  421  ls -lZ index.html 
+  422  cat /etc/sysconfig/selinux 
+  423  sestatus 
+  424  getenforce 
+  425  setenforce 1
+  426  getenforce 
+  427  setenforce 0
+  428  getenforce 
+  429  ls -lZ index.html 
+  430  rm -rf index.html 
+  431  cd ~
+  432  vi index.html
+  433  mc index.html /var/www/html/
+  434  mv index.html /var/www/html/
+  435  cd /var/www/html/
+  436  ls -lZ index.html 
+  437  getenforce 
+  438  setenforce 1
+  439  getenforce 
+  440  ls -lZ index.html 
+  441  chcon -t httpd_sys_content_t index.html 
+  442  ls -lZ index.html 
+  443  ps -efZ | grep httpd
+  444  getsebool -a | grep http
+  445  setsebool -a httpd_can_network_connect_db on
+  446  setsebool  httpd_can_network_connect_db on
+  447  getsebool -a | grep httpd_can_network_connect_db
+  448  sestatus -v
+  449  sestatus -b
+  450  sestatus -b | grep http
+  451  ls -lZ index.html 
+  452  ps -efZ | grep httpd
+  453  systemctl status firewalld
+  454  systemctl stop firewalld
+  455  systemctl start firewalld
+  456  systemctl status firewalld
+  457  cat /etc/redhat-release 
+  458  firewall-cmd --add-permenant --servcie=http
+  459  man firewall-cmd
+  460  firewall-cmd --permenanent
+  461  firewall-cmd --permanent --add-service=http
+  462  firewall-cmd --reload
+  463  cd ~
+  464  vi /etc/hosts.deny 
+  465  cat /etc/hosts.deny 
+  466  vi /etc/hosts.deny 
+  467  nmtui
+  468  ip a
+  469  nmcli con show
+  470  nmcli conn del dff4f672-e65c-4aed-b100-dc4635cba927
+  471  nmcli conn del 5e267fb4-34e6-4639-aa91-7784942bbe38
+  472  nmcli con show
+  473  nmcli con add type bond con-name mybond0 ifname bond0 mode active-backup
+  474  nmcli con  add type bond-slave con-name bond0-enp0s8  ifname enp0s8 master bond0
+  475  nmcli con  add type bond-slave con-name bond0-enp0s9  ifname enp0s9 master bond0
+  476  nmcli conn up mybond0
+  477  ip a
+  478  nmcli con show
+  479  nmtui
+  480  cd /etc/sysconfig/network-scripts/
+  481  ls
+  482  cat ifcfg-mybond0
+  483  vi ifcfg-mybond0 
+  484  ip a
+  485  ifup bond0
+  486  ip a
+  487  ifdown bond0
+  488  ifup bond0
+  489  ip a
+  490  ip a | grep bond0
+  491  history 
