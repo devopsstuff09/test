@@ -1,0 +1,151 @@
+master cmods
++++
+yum install nfs* -y
+  652  rpm -qa | grep nfs
+  653  systemctl status nfs
+  654  systemctl enable nfs
+  655  systemctl start nfs
+  656  systemctl status nfs
+  657  #firewalld-cmd --permeant --add-service=nfs
+  658  systemctl status firewalld
+  659  firewall-cmd --permanent --add-service=nfs
+  660  firewall-cmd --permanent --add-service=rpc-bind
+  661  firewall-cmd --permanent --add-service=mountd
+  662  firewall-cmd --reload
+  663  mkdir /data
+  664  chmod 777 /data/
+  665  vi /etc/exports
+  666  cat /etc/exports
+  667  exportfs -rv
+  668  cd /data/
+  669  ls
+  670  rm -rf file2 
+  671  ls
+  672  df -h
+  673  cat /etc/exports
+  674  vi /etc/exports
+  675  cat file2
+  676  cat file1
+  677  cd ~
+  678  yum install samba* -y
+  679  systemctl start smb nmb
+  680  systemctl enable smb nmb
+  681  firewall-cmd --permanent --add-service=samba
+  682  firewall-cmd --reload
+  683  mkdir /commonn
+  684  ls -ldZ /commonn/
+  685  sestatus 
+  686  semanage fcontext -a -t samba_share_t /commonn/
+  687  ls -ldZ /commonn/
+  688  useradd user1
+  689  smbpasswd -a user1
+  690  vi /etc/samba/smb.conf
+  691  testparm 
+  692  systemctl restart smb nmb
+  693  chmod 777b /commonn/
+  694  chmod 777 /commonn/
+  695  systemctl restart smb nmb
+  696  ls -l /commonn/
+  697  ls -ld /commonn/
+  698  chmod 777 /commonn/
+  699  cat /etc/samba/smb.conf
+  700  vi /etc/samba/smb.conf
+  701  systemctl restart smb nmb
+  702  cd /commonn/
+  703  ls
+  704  cat /etc/samba/smb.conf
+  705  cd ~
+  706  yum install postfix
+  707  firewall-cmd --reload
+  708  firewall-cmd --permanent --add-service=smtp
+  709  firewall-cmd --reload
+  710  systemctl status posfix
+  711  systemctl status postix
+  712  systemctl status postfix
+  713  vi /etc/postfix/main.cf 
+  714  cp /etc/postfix/main.cf /tmp/mai.cf
+  715  vi /etc/postfix/main.cf 
+  716  postfix check
+  717  postconf -nn
+  718  postconf -n
+  719  systemctl restart postfix
+  720  useradd sai
+  721  passwd sai
+  722  echo testmail | mail -s "testmail" sai@example.com
+  723  yum install mail
+  724  yum provides mail
+  725  yum provides mailutils* -y
+  726  yum install mailx 
+  727  echo testmail | mail -s "testmail" sai@example.com
+  728  su - sai
+  729  echo testmail | mail -s "testmail" sai@example.com
+  730  tail -f /var/log/maillog 
+  731  echo testmail | mail -s "testmail" sai@master.example.com
+  732  su - sai
+  733  dmidecode | grep serial
+  734  dmidecode 
+  735  dmidecode | grep 'Product'
+  736  history 
+  
+  
+  +++
+
+cliennt
+99  yum install nfs-client* -y
+  100  yum install nfs-utils* -y
+  101  #yum install nfs-utils* -y
+  102  showmount -e 192.168.57.3
+  103  mount -t nfs 192.168.57.3:/data /mnt/
+  104  df -h
+  105  cd /mnt/
+  106  touch file1
+  107  touch file2
+  108  ls 
+  109  ls
+  110  cat /etc/fstab 
+  111  #192.168.57.3:/data /mnt nfs defaults 0 0
+  112  cd ..
+  113  umount /mnt/
+  114  vi /etc/fstab 
+  115  mount -a
+  116  df -h
+  117  cd /mnt/
+  118  tocuh file{1..10}
+  119  touch file{1..10}
+  120  ls
+  121  blkid /data
+  122  blkid 192.168.57.3:/data 
+  123  mount -a
+  124  mount 
+  125  #yum install nfs-utils* -y
+  126  #mount -t nfs 192.168.57.3:/data /mnt/
+  127  cat /etc/fstab 
+  128  ls
+  129  vi file1
+  130  cd ..
+  131  yum install cifs-utils
+  132  mkdir /pavan
+  133  mount //192.168.57.3/commonn /pavan/ -o username=user1
+  134  df -h
+  135  cd /pavan/
+  136  tocuh file1
+  137  touch file1
+  138  cd ..
+  139  chmod 777 pavan/
+  140  ls -ld pavan/
+  141  cd pavan/
+  142  touch file1
+  143  cd ..
+  144  umount pavan
+  145  df -h
+  146  mount //192.168.57.3/commonn /pavan/ -o username=user1
+  147  df -h
+  148  cd /pavan/
+  149  touch pavan
+  150  ls
+  151  touch file{1..10}
+  152  ls
+  153  pwd
+  154  cd~
+  155  history 
+[root@worker pavan]# 
