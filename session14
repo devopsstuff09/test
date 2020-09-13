@@ -1,0 +1,84 @@
+yum install mariadb mariadb-server
+   89  systemctl status mariadb
+   90  systemctl start mariadb
+   91  systemctl status mariadb
+   92  ps -ef | grep mysql
+   93  mysql_secure_installation
+   94  #yum install mariadb mariadb-server
+   95  #systemctl start mariadb
+   96  #mysql_secure_installation
+   97  mysql -u root -p redhat
+   98  mysql -u root -p
+   99  mysql -u samuel -p
+  100  mysqldump test -u root -p > testdbdump.sql
+  101  ls
+  102  yum install screen
+  103  screen -S demo
+  104  screen -ls
+  105  scree -ls
+  106  scree -l
+  107  screen -ls
+  108  screen -x 1750.demo
+  109  #mysqldump test -u root -p > testdbdump.sql
+  110  ls
+  111  scp testdbdump.sql root@192.168.57.4:~
+  112  mysql -u root -p
+  113  mysqldump restor -u root -p < testdbdump.sql 
+  114  mysql -u root -p
+  115  mysql restor -u root -p < testdbdump.sql 
+  116  mysql -u root -p
+  117  history 
+  118  mysql -u root -p
+  119  lsblk 
+  120  init 0
+  121  sleep 3000
+  122  lsblk 
+  123  yum install targectcli* -y
+  124  yum install targetcli* -y
+  125  #yum install targetcli* -y
+  126  systemctl enable target
+  127  systemctl start target
+  128  systemctl status firewalld
+  129  lsblk 
+  130  pvcreate /dev/sdb
+  131  vgcreate vgroup /dev/sdb
+  132  vgs
+  133  lvcreate -n disk_lv -L 4G vgroup
+  134  lvdisplay disk_lv
+  135  lvdisplay vgroup/disk_lv
+  136  targetcli 
+  137  lsblk 
+  138  history 
+
+
++++++
+
+client
+
+260  yum  install iscsi-innitiator-utils -y
+  261  yum  install iscsi-initiator-utils -y
+  262  vi /etc/iscsi/initiatorname.iscsi 
+  263  systemctl enable iscsi
+  264  systemctl start iscsi
+  265  iscsiadm  -m discovery -t st -p 192.168.57.5
+  266  cat /etc/iscsi/initiatorname.iscsi 
+  267  #iscsiadm -m node -T iqn.2020-09.com.example:nagioserver  -p 192.168.57.5 -l
+  268  lsblk 
+  269  iscsiadm -m node -T iqn.2020-09.com.example:nagioserver  -p 192.168.57.5 -l
+  270  lsblk 
+  271  fdisk -l
+  272  fdisk /dev/sdb
+  273  mkfs.ext4 /dev/sdb1
+  274  mkdir /test
+  275  mount /dev/sdb1 /test/
+  276  df -Th
+  277  cat /etc/iscsi/initiatorname.iscsi 
+  278  #yum  install iscsi-initiator-utils -y
+  279  cat /etc/iscsi/initiatorname.iscsi 
+  280  #iscsiadm  -m discovery -t st -p 192.168.57.5
+  281  #iscsiadm -m node -T iqn.2020-09.com.example:nagioserver  -p 192.168.57.5 -l
+  282  lsblk 
+  283  history 
+  
+  
+  
