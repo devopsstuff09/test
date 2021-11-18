@@ -26,3 +26,27 @@ EXCEPTION
    DBMS_OUTPUT.PUT_LINE('10');
    DBMS_OUTPUT.PUT_LINE('11');
 END;
+########################################3
+DECLARE
+    CURSOR bas IS
+    SELECT idbasket, quantity, subtotal FROM bb_basket
+    WHERE idshopper='24' AND orderplaced ='1';
+    totqty bb_basket.quantity%TYPE:=0;
+    basid bb_basket.idbasket%TYPE;
+    rating VARCHAR2(10);
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('IDBasket are');
+    FOR an IN bas 
+    LOOP
+    totqty := totqty+an.quantity;
+    DBMS_OUTPUT.PUT_LINE(an.idbasket);
+    END LOOP;
+    IF totqty > 5 THEN
+        rating := 'HIGH';
+    ELSIF totqty > 0 THEN
+        rating := 'LOW';
+    ELSE
+        rating := 'ZERO';
+    END IF;
+    DBMS_OUTPUT.PUT_LINE('The rating is '||rating);
+END;
